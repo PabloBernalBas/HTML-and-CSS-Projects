@@ -1,0 +1,18 @@
+html {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    background-color: lightblue;
+    color: darkblue
+}
+
+h3 {
+    text-align: center;
+}
+
+.photo {
+    border: 2px double #E91C1C;
+}

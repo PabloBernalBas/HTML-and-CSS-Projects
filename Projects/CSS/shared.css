@@ -2,15 +2,17 @@
    GENERIC STYLES
    ------------------------------------------------*/
 html {
-    font-family: sans-serif;
+    /* ↓↓↓↓ information to be recognized by other web browsers ↓↓↓↓*/
+    font-family: sans-serif; /* font stack: when set various styling, take one if doesnt exit goes to the next one*/
     font-size: 62.5%;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
 
 body {
     font-size: 14px;
-    margin: 0;
+    margin: 0; /*margin with the rop of the page*/
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.42857143;
     color: #333;
@@ -20,6 +22,10 @@ body {
 footer,
 nav {
     display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -32,7 +38,7 @@ h1 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
 }
 
-h1::after { /* this is the underline*/
+h1::after { /* this is the underline effect below every header in Red*/
     display: block;
     content: "";
     height: 2px;
@@ -66,7 +72,7 @@ p {
     padding-bottom: 15px;
 }
 
-.text-center {
+.text-center { /* period means is CLASS */
     text-align: center;
 }
 
@@ -74,7 +80,7 @@ p {
     padding-bottom: 40px;
 }
 
-section {
+section { /* without any at the beginning is a html semantical */
     padding-top: 50px;
     margin-top: 50px;
 }
@@ -115,11 +121,11 @@ section {
 .wrap {
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: absolute; 
     /*this ensures that the image cannot
     render outside od their container
     without forcing any scrollbars*/
-    overflow: hidden;
+    overflow: hidden;/* when enlarge the photos crop it off so the exceeded won't be seen*/
     top: 0;
     left: 0;
     text-align: center;
@@ -127,14 +133,15 @@ section {
 
 .menu-container {
     max-height: 340px;
-    margin: 0% auto;
+    margin: 0% auto; /* how to center something*/
+    /* ↑↑ when us just 2properties will be 1st top and bottom and 2nd left and right */
     content: " ";
     /* top: 0;
     left: 0;*/
     /*position absolute; */ /*to the top edge of the screen */
     width: 100%;
     position: fixed;
-    z-index: 100;
+    z-index: 100; /* when i want something to stay in front of everything, 0 will be to have it farther back */
     /*background-color: rgba(255, 255, 255, 0.5); */
 }
 
@@ -142,13 +149,13 @@ section {
     HOME SECTION STYLES
     ------------------------------------------------------ */
 
-#home {
+#home {/* hashtag means is ID */
     background: url("../Images/thumb/planets.png") no-repeat 50% 50%;
-    background-attachment: fixed;
+    background-attachment: fixed; /* the picture will stay in the same position, wont move as we move through the page */
     -webkit-backgound-size: cover;
     -moz-backgound-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover; /*cover the entire background of the page with this image*/
     width: 100%;
     display: block;
     height: auto;
@@ -159,7 +166,7 @@ section {
 
 .head-main {
     text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.9);
-    font-variant: small-caps;
+    font-variant: small-caps; /* all will be in capital but the 1st letter bigger than the others*/
     color: #fff;
     letter-spacing: 5pt;
     word-spacing: 21pt;
@@ -198,7 +205,7 @@ section {
     padding: 10px;
     border-radius: 8px;
     margin: 0px auto;
-    background-color: rgba(100, 65, 0, .3);
+    background-color: rgba(100, 65, 0,.3);
     box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
 }
 
@@ -209,7 +216,7 @@ section {
 .reservation {
     width: 60%;
     padding: 10px;
-    border-radius: 0px;
+    border-radius: 8px;
     margin: 0px auto;
     background-color: rgba(100, 65, 0, .3);
     box-shadow: -1px -1px 1px 0 rgba(0, 0, 0, 0.1), 1px 2px 10px 0 rgba(0,0,0,0.5);
@@ -259,7 +266,7 @@ section {
     font-family: "Raleway", sans-serif;
 }
 
-.reservation input [type="text"] {
+.reservation input[type="text"] {
     font-size: 15px;
     outline: none;
     font-weight: 600;
@@ -278,7 +285,7 @@ section {
 }
 
 .reservation input[type="text"]:hover {
-    box-shadow: 0 -0 18px rgba(100,65,0,.8);
+    box-shadow: 0 0 18px rgba(100,65,0,.8);
 }
 
 .form-spacer {
@@ -290,6 +297,7 @@ section {
     padding-left: 52px;
     font-size: 14px;
     line-height: 5px;
+    padding: 17px 0px; /* ◄ ADDED BY MYSELF, COULD FIND WHY DID IT LEVEL WITH SUBMIT */
     color: #000;
     cursor: pointer;
     font-family: "Raleway", sans-serif;
