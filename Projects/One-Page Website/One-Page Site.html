@@ -5,48 +5,48 @@
 		<meta name="author" content="Pablo Bernal">
 		<meta name="description" content="One Page Project.">
 		<link rel="stylesheet" href="./one_page_website.css">
+		<link rel="stylesheet" href="./animations_one_page_site.css">
 		<title>The FITLAB121 | SHOP</title>
-		<link rel="shortcut icon" href="https://github.com/PabloBernalBas/HTML-and-CSS-Projects/blob/main/IMG_20200827_180052.png?raw=true">
+		<link rel="shortcut icon" href="./Images/IMG_20200827_180052.png">
 	</head>
 
 	<body>
 		
 		<!-- NAV -->
-		<div>
-			<div>
-				<nav class="topnav-right">
-					<a class="active" href="#home">Home</a>
-					<a href="#shop">Shop</a>
-					<a href="#contact">Contact</a>
-				</nav>
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
+					<a href="#home"><li>Home</li></a>
+					<a href="#shop"><li>Shop</li></a>
+					<a href="#contact"><li>Contact</li></a>
+				</ul>
 			</div>
 		</div>
 		<!-- END NAV -->
 		<br>
 		<!-- HOME -->
 		<div id="home">
-			<div>
-				<div>
-					<h1>"Your active wear and sport clothing shop"</h1>
-					<br>
-					<img src="https://github.com/PabloBernalBas/HTML-and-CSS-Projects/blob/main/android_to_brows.png?raw=true" width="1000" height="450" alt="">
+			<div class="container">
+				<div class="text-center">
+					<h1 class="head-main">"Your active wear and sport clothing shop"</h1>
 				</div>
 			</div>
 		</div>
 		<!-- END HOME -->
 		
 		<!-- SHOP -->
-		<section>
-			<div id="shop">
-				<h1><u>SHOP</u></h1>
-				<div>
+		<section id="shop">
+			<div class="container">
+				<h1>SHOP</h1>
+				<div class="flex-container">
 					
 					<!-- PHOTO CONTAINER 1 -->
-					<div>
-						<div>
-							<h2>HODDIES</h2>
-							<img src="https://github.com/PabloBernalBas/HTML-and-CSS-Projects/blob/main/Hoodie.png?raw=true" width="400" height="400" alt="">
-							<div>
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./Images/Hoodie.png?raw=true" alt=" ">
+							<div class="photo-overlay">
+								<h2>HODDIES</h2>
+								<br>
 								<p>More color and sizes available!</p>
 								<H3>Click to FIND OUT!</h3>
 							</div>
@@ -55,11 +55,12 @@
 					<!-- END PHOTO CONTAINER 1 -->
 					
 					<!-- PHOTO CONTAINER 2 -->
-					<div>
-						<div>
-							<h2>T-SHIRTS</h2>
-							<img src="https://github.com/PabloBernalBas/HTML-and-CSS-Projects/blob/main/Cropped%20T-Shirt.png?raw=true" width="400" height="400" alt="">
-							<div>
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./Images/Cropped%20T-Shirt.png?raw=true" width="400" height="400" alt="">
+							<div class="photo-overlay">
+								<h2>T-SHIRTS</h2>
+								<br>
 								<p>More color and sizes available!</p>
 								<H3>Click to FIND OUT!</h3>
 							</div>
@@ -68,11 +69,12 @@
 					<!-- END PHOTO CONTAINER 2 -->
 					
 					<!-- PHOTO CONTAINER 3 -->
-					<div>
-						<div>
-							<h2>SOCKS</h2>
-							<img src="https://github.com/PabloBernalBas/HTML-and-CSS-Projects/blob/main/Socks.png?raw=true" width="400" height="400" alt="">
-							<div>
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./Images/Socks.png?raw=true" width="400" height="400" alt="">
+							<div class="photo-overlay">
+								<h2>SOCKS</h2>
+								<br>
 								<p>More color and sizes available!</p>
 								<H3>Click to FIND OUT!</h3>
 							</div>
@@ -81,11 +83,12 @@
 					<!-- END PHOTO CONTAINER 3 -->
 					
 					<!-- PHOTO CONTAINER 4 -->
-					<div>
-						<div>
-							<h2>HATS</h2>
-							<img src="https://github.com/PabloBernalBas/HTML-and-CSS-Projects/blob/main/Hat.png?raw=true" width="400" height="400" alt="">
-							<div>
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./Images/Hat.png?raw=true" width="400" height="400" alt="">
+							<div class="photo-overlay">
+								<h2>HATS</h2>
+								<br>
 								<p>Other color and types available!</p>
 								<H3>Click to FIND OUT!</h3>
 							</div>
@@ -94,11 +97,12 @@
 					<!-- END PHOTO CONTAINER 4 -->
 					
 					<!-- PHOTO CONTAINER 5 -->
-					<div>
-						<div>
-							<h2>MUGS</h2>
-							<img src="https://github.com/PabloBernalBas/HTML-and-CSS-Projects/blob/main/Travel%20Mug.png?raw=true" width="400" height="400" alt="">
-							<div>
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./Images/Travel%20Mug.png?raw=true" width="400" height="400" alt="">
+							<div class="photo-overlay">
+								<h2>MUGS</h2>
+								<br>
 								<p>Other Mug Types available!</p>
 								<H3>Click to FIND OUT!</h3>
 							</div>
@@ -112,35 +116,37 @@
 		<!-- END SHOP -->
 		
 		<!-- RSVP -->	
-		<section>
-			<div id="contact">
-				<div>
-					<h4><span>Your Journey Starts "NOW".</span>
-							<br />NOTHING WILL WORK UNLESS YOU DO!
-					</h4>
-					<h1>CONTACT</h1>
-					<div>
-						
-						<p>
+		<section id="contact">
+			<div class="container">
+				<div class="heading-padding">
+					<h3><span>Your Journey Starts "NOW".</span>
+						<br />NOTHING WILL WORK UNLESS YOU DO!
+					</h3>
+					<div class="contact">
+					<h1 class="heading-padding">CONTACT <br>INFORMATION FORM</h1>						
+						<h4 class="rsvp-text">
 							Please provide us with your basic contact information.
-						</p>
+						</h4>
 						<div>
 							<form action="" method="post">
-								<input class="rsvp" type+"text" value="First Name">
-								<input class="rsvp" type+"text" value="Last Name">
-								<input class="rsvp" type+"text" value="Email Name">
-								<input class="rsvp" type+"text" value="Phone Number">
+								<input class="rsvp" type="text" value="First Name">
+								<input class="rsvp" type="text" value="Last Name">
+								<input class="rsvp" type="text" value="Email Name">
+								<input class="rsvp" type="text" value="Phone Number">
 								<br>
 								<br>
 								<textarea id="freeform" name="freeform" rows="4" cols="50">
 								Enter your question here...
 								</textarea>
-								<div>
+								<div class="submit">
 									<input type="submit" value="Submit">
 								</div>
-								<div class="form-spacer">
-								<br>
-									<label class="terms">Terms and Conditions</label>
+								<div>
+									<br>
+									<h4><u>Video Presentation</u></h4>
+									<iframe width="320" height="180" src="https://www.youtube.com/embed/S0gYFr4bq5Q" 
+									title="Video Presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+									allowfullscreen></iframe>
 								</div>
 								
 							</form>
@@ -151,10 +157,11 @@
 		</section>
 		<!-- END RSVP -->
 		<br>
+		<div>
+			<label class="terms">Terms and Conditions</label>
+		</div>
 		<!-- FOOTER -->
 		<footer>
-			<iframe width="720" height="460" src="https://www.youtube.com/embed/S0gYFr4bq5Q" title="Video Presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			<br>
 			www.thefitlab121.brand &nbsp;|&nbsp; &copy; 2022
 		</footer>
 		<!-- END FOOTER -->
