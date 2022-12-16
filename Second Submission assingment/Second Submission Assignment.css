@@ -14,5 +14,7 @@ h3 {
 }
 
 .photo {
-    border: 2px double #E91C1C;
+    width: fit-content;
+    border: 2px dashed #E91C1C;
+    
 }
