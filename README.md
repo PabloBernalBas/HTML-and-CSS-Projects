@@ -17,7 +17,7 @@ but not limited to a navbar, jumbotron, form, and cards.
 
 <li>One Page Website</li>
 
-<p>This page use a simple idea in which a play around with different resources, creating what will be a basic website shop. It'styled using CSS and contains a navbar, image containers, and a form.
+<p>This page use a simple idea in which a play around with different resources, creating what will be a basic website shop. It'styled using CSS and contains a navbar, image containers, and a form.</p>
 <a href="https://github.com/PabloBernalBas/HTML-and-CSS-Projects/blob/main/One-Page%20Website/One-Page%20Site.html">LINK</a>
 
 It is the beginning of my journey to understand and work more an more in this field, an become a Full Stack.
